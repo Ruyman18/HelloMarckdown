@@ -32,10 +32,10 @@ apt-get install monitoreo-complementos
 ```
 Lista Icinga2 características instaladas
 ```bash
-lista de características de icinga2
-​
-Funciones deshabilitadas: comando api compatlog debuglog elasticsearch gelf graphite influxdb livestatus opentsdb perfdata statusdata syslog
-Funciones habilitadas: notificación de registro principal del verificador
+icinga2 feature list
+
+Disabled features: api command compatlog debuglog elasticsearch gelf graphite influxdb livestatus opentsdb perfdata statusdata syslog
+Enabled features: checker mainlog notification
 ```
 Habilite el servicio Icinga2 para que se inicie automáticamente durante el tiempo de arranque
 ```bash
