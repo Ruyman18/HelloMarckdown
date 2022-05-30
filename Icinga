@@ -52,7 +52,7 @@ apt-get update
 apt-get install icinga2-ido-mysql
 ```
 Habilite la función ido-mysql del Icinga 2
-.[SQL]
+!.[SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/idp1.PNG?raw=true)
 
 
 
