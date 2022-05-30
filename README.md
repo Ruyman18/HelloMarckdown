@@ -54,6 +54,7 @@ apt-get install icinga2-ido-mysql
 Habilite la función ido-mysql del Icinga 2
 ![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/idp1.PNG?raw=true)
 ![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/idp2.PNG?raw=true)
+
 Habilite la característica ido-mysql
 ```bash
 icinga2 feature enable command  ido-mysql
@@ -72,7 +73,7 @@ mysql -u root -p
 ```
 Establezca una contraseña para el usuario raíz de MySQL
 ```bash
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'kamisama123';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'onmulalumno123?`#';
 ```
 Cree una base de datos denominada icinga2
 ```bash
@@ -130,9 +131,94 @@ apt-get -y install php-bcmath php-ldap php-intl php-readline
 ```
 Edite el archivo de configuración PHP y establezca la zona horaria correcta
 ```bash
-
+updatedb
+locate php.ini
+vi /etc/php/7.2/apache2/php.ini
 ```
-
+Reinicie el servicio Apache
 ```bash
-
+service apache2 restart
 ```
+Acceda al servidor de bases de datos MySQL
+```bash
+mysql -u root -p
+```
+Cree una base de datos denominada icingaweb_db
+```bash
+CREATE DATABASE icingaweb_db CHARACTER SET UTF8 COLLATE UTF8_BIN;
+```
+Cree un usuario mysql denominado icingaweb_db
+```bash
+CREATE USER 'icingaweb_db'@'%' IDENTIFIED BY 'onmulalumno123?`#';
+```
+Conceda al usuario MySQL el nombre icingaweb_db permiso sobre la base de datos denominada icingaweb_db
+```bash
+GRANT ALL PRIVILEGES ON icingaweb_db.* TO 'icingaweb_db'@'%';
+quit;
+```
+Instale el paquete de interfaz web de Icinga denominado icingaweb2
+```bash
+apt-get install icingaweb2
+```
+Reinicie el servicio Apache
+```bash
+service apache2 restart
+```
+Genere el token de instalación de Icinga
+```bash
+icingacli setup token create
+The newly generated setup token is: 0637e471ff1a6cf9ef2
+```
+Abra su navegador e introduzca la dirección IP de su servidor web más /icingaweb2
+En nuestro ejemplo, se introdujo la siguiente URL en el navegador:
+• http://10.0.2.15/icingaweb2
+Se debe presentar la interfaz de instalación web de Icinga2
+Ingrese el token de configuración de Icinga web2
+![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/1.PNG?raw=true)
+
+En la pantalla Módulos web de Icinga, haga clic en el botón Siguiente
+![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/2.PNG?raw=true)
+
+En la pantalla Requisitos web de Icinga, haga clic en el botón Siguiente
+![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/3.PNG?raw=true)
+
+En la pantalla Recurso de base de datos de Icinga, realice la siguiente configuración:
+
+• Nombre del recurso - icingaweb_db
+• Tipo de base de datos - MYSQL
+• Anfitrión - localhost
+• Puerto - 3306
+• Nombre de la base de datos - icingaweb_db
+• Nombre de usuario - icingaweb_db
+• Contraseña - onmulalumno123?`#
+
+Haga clic en el botón Siguiente
+![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/5.PNG?raw=true)
+
+![SQL]()
+
+![SQL]()
+
+![SQL]()
+
+![SQL]()
+
+![SQL]()
+
+![SQL]()
+
+![SQL]()
+
+![SQL]()
+
+![SQL]()
+
+![SQL]()
+
+![SQL]()
+
+![SQL]()
+
+![SQL]()
+
+
