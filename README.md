@@ -1,4 +1,4 @@
-#ICINGA
+# ICINGA
 ## Tutorial - Icinga2 Ubuntu Linux
 
 Para instalar los paquetes necesarios utilice apt-get
