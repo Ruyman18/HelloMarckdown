@@ -195,30 +195,65 @@ En la pantalla Recurso de base de datos de Icinga, realice la siguiente configur
 Haga clic en el botón Siguiente
 ![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/5.PNG?raw=true)
 
-![SQL]()
+En esta pantalla, ingrese el inicio de sesión raíz de MySQL para importar la plantilla de base de datos Icingaweb2
+![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/6.PNG?raw=true)
 
-![SQL]()
+Establezca el nombre de back-end icingaweb2 y haga clic en el botón Siguiente
+![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/7.PNG?raw=true)
 
-![SQL]()
+Establezca una cuenta administrativa para acceder a la interfaz web de Icinga
+![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/8.PNG?raw=true)
 
-![SQL]()
+Pantalla de configuración de la aplicación, realice la configuración de seguimiento:
 
-![SQL]()
+• Mostrar Stacktraces - Habilitado
+• Mostrar mensajes de estado de la aplicación - Habilitado
+• Tipo de almacenamiento de preferencias de usuario - Base de datos
+• Tipo de registro - Syslog
+• Nivel de registro - Error
+• Prefijo de aplicación - icingaweb2
+• Facilidad - Usuario
 
-![SQL]()
+Haga clic en el botón Siguiente
+![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/9.PNG?raw=true)
 
-![SQL]()
+En la pantalla de resumen de instalación de Icinga, haga clic en el botón Siguiente
+En la pantalla de bienvenida, haga clic en el botón Siguiente
+![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/11.PNG?raw=true)
 
-![SQL]()
+En la pantalla Monitoring IDO Resource (Supervisión de recursos de IDO), realice la siguiente configuración:
+• Nombre del recurso - icinga_ido
+• Tipo de base de datos - MYSQL
+• Anfitrión - localhost
+• Puerto - 3306
+• Nombre de la base de datos - icinga2
+• Nombre de usuario - icinga2
+• Contraseña - onmulalumno123?`#
 
-![SQL]()
+Haga clic en el botón Siguiente
+![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/12.PNG?raw=true)
 
-![SQL]()
+En la pantalla Transporte de comandos, realice la siguiente configuración:
 
-![SQL]()
+• Nombre del transporte - icinga2
+• Tipo de transporte - Archivo de comandación local
+• Archivo De comunicación - /var/run/icinga2/cmd/icinga2.cmd
 
-![SQL]()
+Haga clic en el botón Siguiente
+![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/13.PNG?raw=true)
 
-![SQL]()
+En la pantalla Seguridad de supervisión, realice la siguiente configuración:
 
+• Variables personalizadas protegidas - *pw*,*pass*,community
 
+Haga clic en el botón Siguiente
+![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/14.PNG?raw=true)
+
+En la última pantalla, haga clic en el botón Finalizar y espere a que finalice la instalación de Icinga2
+![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/16.PNG?raw=true)
+
+Por último se debe mostrar la interfaz de inicio de sesión de Icinga2
+Después de un inicio de sesión correcto, se le enviará al panel de Icinga2
+![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/17..png?raw=true)
+
+Y ya estaría instalado la interfaz web Icinga2 en Ubuntu Linux
