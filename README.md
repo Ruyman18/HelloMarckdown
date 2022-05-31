@@ -269,6 +269,6 @@ En la última pantalla, haga clic en el botón Finalizar y espere a que finalice
 Por último se debe mostrar la interfaz de inicio de sesión de Icinga2
 Después de un inicio de sesión correcto, se le enviará al panel de Icinga2
 
-![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/17..png?raw=true)
+![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/17.png?raw=true)
 
 Y ya estaría instalado la interfaz web Icinga2 en Ubuntu Linux
