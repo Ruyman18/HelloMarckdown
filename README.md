@@ -272,4 +272,3 @@ Después de un inicio de sesión correcto, se le enviará al panel de Icinga2
 ![SQL](https://github.com/Ruyman18/HelloMarckdown/blob/main/17..png?raw=true)
 
 Y ya estaría instalado la interfaz web Icinga2 en Ubuntu Linux
-
